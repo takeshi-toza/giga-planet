@@ -39,4 +39,18 @@ class ContactController extends Controller
 
         return view('admin/admin-contact-show', compact('contact'));
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        Contact::where('id', $id)->delete();
+
+        // 完了メッセージを表示
+        return redirect()->route('admin-contact.index')->with('message', '削除しました');
+    }
 }

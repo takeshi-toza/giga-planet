@@ -46,7 +46,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
 //    Route::resource('admin-app', AdminGameAppController::class, ['except' => ['show']]);
     Route::resource('admin-app', AdminGameAppController::class)->except(['show']);
     Route::resource('admin-genre', AdminGenreController::class)->except(['show']);
-    Route::resource('admin-contact', AdminContactController::class)->only(['index', 'show']);
+    Route::resource('admin-contact', AdminContactController::class)->only(['index', 'show', 'destroy']);
 });
 
 //Route::get('/admin/', [LoginController::class, 'adminIndex']);
