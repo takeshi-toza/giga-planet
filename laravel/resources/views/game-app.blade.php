@@ -115,7 +115,7 @@ div h2:after {
                 </div>
             @endif
 
-            <div class="card01 l-section">
+            <div class="icon-list l-section">
                 <div class="l-inner">
 
                     @if(!empty($app->screen_orientation) && $app->screen_orientation === 2)
@@ -126,7 +126,6 @@ div h2:after {
                                         @foreach ($screenshot_index as $screenshot)
                                             <a href="#" class="swiper-slide">
                                                 <article class="slide">
-{{--                                                    <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 1em;border: solid 1px #eaedf2;background: #f3f6fc;border-radius: 0.3em;height: 240px;">--}}
                                                     <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #f3f6fc;border-radius: 0.3em;">
                                                         <img src="{{ asset($screenshot['screenshot']) }}" style="border-radius: 0.3em;height: 0.1%;">
                                                     </div>
@@ -144,7 +143,6 @@ div h2:after {
                                     @foreach ($app->screenshot as $screenshot)
                                         <a href="#" class="swiper-slide">
                                             <article class="slide">
-{{--                                                <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 1em;border: solid 1px #eaedf2;background: #f3f6fc;border-radius: 0.3em;width: 240px;">--}}
                                                 <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #f3f6fc;border-radius: 0.3em;">
                                                     <img src="{{ asset($screenshot->screenshot) }}" style="border-radius: 0.3em;max-width: 100%">
                                                 </div>

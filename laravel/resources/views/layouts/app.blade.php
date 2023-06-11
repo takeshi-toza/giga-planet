@@ -91,13 +91,13 @@
                     0: {
                         slidesPerView: 2,
                     },
-                    400: {
+                    460: {
                         slidesPerView: 3,
                     },
-                    800: {
+                    860: {
                         slidesPerView: 4,
                     },
-                    1200: {
+                    1260: {
                         slidesPerView: 5,
                         spaceBetween: 32,
                     }

@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="p-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-12">
+        <div class="p-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-10">
             @foreach ($all_apps as $app)
                 <figure class="image-block">
                     <a href="{{ route('app.index', $app->app_id) }}" class="figure-pointer-none">
