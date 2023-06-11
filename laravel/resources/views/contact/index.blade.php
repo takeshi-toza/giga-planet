@@ -58,7 +58,7 @@ body .sgb-box-simple .sgb-box-simple__body>* {
 -->
 </style>
 
-    <main style="max-width: 80%;margin: auto;" class="mt-3">
+    <main class="mx-auto mt-20 md:mt-0 w-4/5">
         <div class="py-6 sm:py-8 lg:py-12" style="background-color: #333;">
             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                 <div class="my-1 md:mb-16">
@@ -93,7 +93,7 @@ body .sgb-box-simple .sgb-box-simple__body>* {
                     </div>
 
                     <div class="sm:col-span-2 flex justify-center items-center">
-                        <button type="submit" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">送信確認</button>
+                        <button type="submit" class="inline-block bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 focus-visible:ring ring-yellow-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">送信確認</button>
                     </div>
                 </form>
 

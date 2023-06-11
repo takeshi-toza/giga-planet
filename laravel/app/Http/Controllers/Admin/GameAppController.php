@@ -175,28 +175,28 @@ class GameAppController extends Controller
 
         if ($request->hasfile('main_image')) {
             $file_name = $request->file('main_image')->getClientOriginalName();
-            $request->file('main_image')->storeAs('public/' . $request->app_id, $file_name);
-            $main_image_path = '/storage/' . $request->app_id . '/' . $file_name;
+            $request->file('main_image')->storeAs('public/' . $app->app_id, $file_name);
+            $main_image_path = '/storage/' . $app->app_id . '/' . $file_name;
         }
 
         if ($request->hasfile('sub_image')) {
             $file_name = $request->file('sub_image')->getClientOriginalName();
-            $request->file('sub_image')->storeAs('public/' . $request->app_id, $file_name);
-            $sub_image_path = '/storage/' . $request->app_id . '/' . $file_name;
+            $request->file('sub_image')->storeAs('public/' . $app->app_id, $file_name);
+            $sub_image_path = '/storage/' . $app->app_id . '/' . $file_name;
         }
 
         if ($request->hasfile('icon')) {
             $file_name = $request->file('icon')->getClientOriginalName();
-            $request->file('icon')->storeAs('public/' . $request->app_id, $file_name);
-            $icon_path = '/storage/' . $request->app_id . '/' . $file_name;
+            $request->file('icon')->storeAs('public/' . $app->app_id, $file_name);
+            $icon_path = '/storage/' . $app->app_id . '/' . $file_name;
         }
 
         if ($request->hasfile('screenshot')) {
             $screenshot_files = $request->file('screenshot');
             foreach($screenshot_files as $screenshot){
                 $file_name = $screenshot->getClientOriginalName();
-                $screenshot->storeAS('public/' . $request->app_id, $file_name);
-                $screenshots[]['screenshot'] = '/storage/' . $request->app_id . '/' . $file_name;
+                $screenshot->storeAS('public/' . $app->app_id, $file_name);
+                $screenshots[]['screenshot'] = '/storage/' . $app->app_id . '/' . $file_name;
             }
         }
 

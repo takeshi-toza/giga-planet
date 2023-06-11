@@ -20,9 +20,6 @@ use App\Http\Controllers\Admin\ContactController as AdminContactController;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
 // お問い合わせ
@@ -43,17 +40,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'guest:admin'], function () {
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/logout', [LoginController::class, 'adminLogout'])->name('admin.admin-logout');
     Route::get('/dashboard', [LoginController::class, 'adminDashboard'])->name('admin.admin-dashboard');
-//    Route::resource('admin-app', AdminGameAppController::class, ['except' => ['show']]);
     Route::resource('admin-app', AdminGameAppController::class)->except(['show']);
     Route::resource('admin-genre', AdminGenreController::class)->except(['show']);
     Route::resource('admin-contact', AdminContactController::class)->only(['index', 'show', 'destroy']);
 });
-
-//Route::get('/admin/', [LoginController::class, 'adminIndex']);
-//Route::get('/admin/login', [LoginController::class, 'adminIndex']);
-//Route::post('/admin/login', [LoginController::class, 'adminLogin'])->name('admin.admin-login');
-//Route::get('/admin/logout', [LoginController::class, 'adminLogout'])->name('admin.admin-logout');
-//Route::get('/admin/dashboard', [LoginController::class, 'adminDashboard'])->name('admin.admin-dashboard');
 
 Route::get('/app/{app_id}', [GameAppController::class, 'show'])->name('app.index');
 Route::get('/privacypolicy', function () {
@@ -62,9 +52,5 @@ Route::get('/privacypolicy', function () {
 Route::get('/portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
-
-//Route::get('/dashboard', function () {
-//    return view('dashboard');
-//})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

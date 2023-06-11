@@ -13,7 +13,8 @@
 <style type="text/css">
     <!--
     .sectionTitle {
-        /*width: 80.625%;*/
+        width: 32.25%;
+        min-width: 240px;
         max-width: 516px;
         position: relative;
         margin: 10px auto 50px;
@@ -41,7 +42,6 @@
         left: 0;
         margin-top: 3.4884%;
         margin-left: 3.1008%;
-        /*z-index: -1;*/
     }
     .sectionTitle.show::before {
         margin-top: 3.4884%;
@@ -50,7 +50,6 @@
         -ms-transform: scale(1);
         transform: scale(1);
         opacity: 1;
-        /*z-index: -1;*/
     }
     .sectionTitle h1 {
         position: relative;
@@ -114,96 +113,49 @@
         right: 0;
     }
     #profile {
-        /*position: relative;*/
         background-color: #fdeddb;
         padding-top: 5%;
         padding-bottom: 5%;
-        /*z-index: 7;*/
     }
     #works {
-        /*position: relative;*/
         background-color: #7e8a00;
         padding-top: 5%;
         padding-bottom: 5%;
-        /*z-index: 9;*/
     }
     #skill {
-        /*position: relative;*/
         background-color: #333f69;
         padding-top: 5%;
         padding-bottom: 5%;
-        /*z-index: 6;*/
     }
     #contact {
-        /*position: relative;*/
         background-color: #ffbe00;
         padding-top: 5%;
         padding-bottom: 5%;
-        /*z-index: 8;*/
     }
     #works .work {
         position: relative;
         overflow: hidden;
         width: 87.67%;
         max-width: 600px;
-        /*padding-top: 10%;*/
-        /*padding-bottom: 10%;*/
-        /*margin: 1.875% auto auto;*/
         margin: auto auto;
         background: url(/images/portfolio/bg_work.png) no-repeat center center;
         background-size: 100% 100%;
     }
     #works .work img {
-        /*width: 88%;*/
-        /*margin: auto;*/
         padding: 6%;
     }
-    /*#works .work::before {*/
-    /*    width: 100%;*/
-    /*    padding-top: 67.0941%;*/
-    /*    left: 0;*/
-    /*    margin-left: auto;*/
-    /*}*/
-    /*#works .work::before {*/
-    /*    content: "";*/
-    /*    !*width: 109.375%;*!*/
-    /*    height: 0;*/
-    /*    !*padding-top: 73.4375%;*!*/
-    /*    display: block;*/
-    /*    background: url(/images/portfolio/bg_work.jpg) no-repeat center center;*/
-    /*    background-size: 100% 100%;*/
-    /*    position: absolute;*/
-    /*    top: 0;*/
-    /*    !*left: 50%;*!*/
-    /*    !*margin-left: -54.6875%;*!*/
-    /*    z-index: -1;*/
-    /*}*/
     #skill .skill {
         background: url(/images/portfolio/bg_chart.jpg) no-repeat center center;
         background-size: 100% 100%;
-        /*margin: auto;*/
     }
-    #skill .qualification {
-        /*background: url(/images/portfolio/qualification.jpg) no-repeat center center;*/
-        /*background-size: 100% 100%;*/
-        /*margin: auto;*/
-    }
-    /*#skill .skillDetail {*/
-    /*    display: flex;*/
-    /*    justify-content: space-evenly;*/
-    /*}*/
     #profile .characterDetailWrap {
-        width: 100%;
-        max-width: 640px;
         position: relative;
-        margin: 29.6875% auto auto;
-    }
-    #profile .characterDetailWrap {
+        margin: auto auto 2.5rem auto;
         width: 69%;
+        min-width: 280px;
         max-width: 1104px;
-        margin-top: 1.875%;
     }
-    #profile .characterDetailWrap.shinoby::before {
+    #profile .characterDetailWrap.makimono::before {
         margin-left: 0;
     }
     #profile .characterDetailWrap::before {
@@ -249,7 +201,6 @@
         height: 0;
         padding-top: 14.8276%;
         display: block;
-        /*background: url(./images/top_character/bg_chara_top_sp.png) no-repeat center bottom;*/
         background-size: 100% auto;
         position: absolute;
         top: 0;
@@ -267,7 +218,6 @@
         z-index: 1;
     }
     #profile .characterDetailWrap .characterDetail section {
-        /*background: url(./images/top_character/bg_chara_center_sp.png) repeat-y center top;*/
         background-size: 110.3449% auto;
         position: relative;
         padding: 5.1725% 6.8966% 0;
@@ -285,8 +235,7 @@
         margin-top: 2.8572%;
         margin-left: 3.8096%;
     }
-    #profile .characterDetailWrap .characterDetail .shinobyDetail .name {
-        /*background: url(/images/portfolio/img_prof_name_pc.jpg) no-repeat center top;*/
+    #profile .characterDetailWrap .characterDetail .profDetail .name {
         background: url(/images/portfolio/prof_name.jpg) no-repeat center top;
         background-size: 100% auto;
         left: auto;
@@ -301,14 +250,13 @@
         margin: 96.5518% auto auto;
     }
     #profile .characterDetailWrap .characterDetail .name {
-        /* width: 37.6123%; */
         height: 0;
         overflow: hidden;
         padding-top: 10.1429%;
         margin-top: 5.1837%;
         width: 32.6123%;
     }
-    #profile .characterDetailWrap .characterDetail .shinobyDetail .image {
+    #profile .characterDetailWrap .characterDetail .profDetail .image {
         left: 0;
         margin-left: 3.5%;
     }
@@ -318,29 +266,24 @@
         top: 0;
         margin-top: 3%;
     }
-    #profile .characterDetailWrap.shinoby .characterDetail .shinobyDetail {
+    #profile .characterDetailWrap.makimono .characterDetail .profDetail {
         display: block;
     }
-    #profile .characterDetailWrap .characterDetail .shinobyDetail .detail {
-        /*background: url(/images/portfolio/img_prof_detail_pc.jpg) no-repeat center top;*/
+    #profile .characterDetailWrap .characterDetail .profDetail .detail {
         background: url(/images/portfolio/prof_text.jpg) no-repeat center top;
         background-size: 100% auto;
         right: 0;
-        margin-right: 9.5511%;
+        margin-right: 8%;
     }
     #profile .characterDetailWrap .characterDetail .detail {
-        /* width: 39.6123%; */
         height: 0;
-        padding-top: 37.5715%;
-        /* padding-top: 43.07692307692308%; */
+        padding-top: 38%;
         overflow: hidden;
         position: absolute;
         top: 0;
         padding-bottom: 0;
-        margin-top: 14.347%;
-        width: 34.6123%;
-        /* width: 30.6123%; */
-        /* margin-top: 10.347%; */
+        margin-top: 15%;
+        width: 36%;
     }
     #profile .characterDetailWrap .characterDetail::after {
         width: 93.8096%;
@@ -374,18 +317,6 @@
     #contact .btn_contact:hover {
         opacity:0.7;
         transition:0.3s;
-    }
-
-    .modal-body{
-        max-height: 500px;
-    }
-    .bg-gray-800-opacity{
-        background-color: #2D374850;
-    }
-    @media screen and (max-width: 768px){
-        .modal-body {
-            max-height: 400px;
-        }
     }
 
     /* animation for vue transition tag */
@@ -426,27 +357,17 @@
     <div style="height: 30px; width: 100%; background: url(/images/portfolio/bg_prof.jpg) repeat right top;"></div>
 
     <section id="profile" class="section">
-        <div class="sectionTitle show mx-auto" style="width: 32.25%;">
+        <div class="sectionTitle show mx-auto">
             <h1 style="background: url(/images/portfolio/bg_title_prof.png) no-repeat center center; background-size: 100% auto;">
                 <img src="/images/portfolio/title_prof.png" alt="自己紹介">
             </h1>
             <div class="shuriken2"><img src="/images/portfolio/img_sectionTitle_shuriken.png" alt="手裏剣"></div>
             <div class="shuriken"><img src="/images/portfolio/img_sectionTitle_shuriken.png" alt="手裏剣"></div>
         </div>
-<!--
-        <div class="characterDetailWrap shinoby">
+
+        <div class="characterDetailWrap makimono">
             <div class="characterDetail">
-                <section id="shinoby" class="shinobyDetail">
-                    <h1 class="name"><img src="/images/portfolio/img_prof_name_pc.jpg" alt=""></h1>
-                    <div class="image"><img src="/images/portfolio/img_prof_image.jpg" alt=""></div>
-                    <p class="detail"><img src="/images/portfolio/img_prof_detail_pc.jpg" alt=""></p>
-                </section>
-            </div>
-        </div>
--->
-        <div class="characterDetailWrap shinoby">
-            <div class="characterDetail">
-                <section id="shinoby" class="shinobyDetail">
+                <section class="profDetail">
                     <h1 class="name"><img src="/images/portfolio/prof_name.jpg" alt=""></h1>
                     <div class="image"><img src="/images/portfolio/GravityNinjaIcon.png" alt="" class="p-2.5"></div>
                     <p class="detail"><img src="/images/portfolio/prof_text.jpg" alt=""></p>
@@ -458,7 +379,7 @@
     <div style="height: 30px; width: 100%; background: url(/images/portfolio/bg_prof.jpg) repeat right top;"></div>
 
     <section id="works" class="section">
-        <div class="sectionTitle show mx-auto" style="width: 32.25%;">
+        <div class="sectionTitle show mx-auto">
             <h1 style="background: url(/images/portfolio/bg_title_work.png) no-repeat center center; background-size: 100% auto;">
                 <img src="/images/portfolio/title_work.png" alt="制作物">
             </h1>
@@ -467,31 +388,31 @@
         </div>
 
         <div class="worksList p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-5">
-            <div class="work" @click="showModal('official')">
-                <img src="/images/portfolio/GigaPlanetMain.png" alt="オフィシャルサイト">
+            <div class="work cursor-pointer" @click="showModal('official')">
+                <img src="/images/portfolio/GigaPlanetMain.jpg" alt="オフィシャルサイト">
             </div>
-            <div class="work" @click="showModal('numbers')">
+            <div class="work cursor-pointer" @click="showModal('numbers')">
                 <img src="/images/portfolio/BattleTheNumberMain.jpg" alt="にゃんばーバトル">
             </div>
-            <div class="work" @click="showModal('labyrinth')">
+            <div class="work cursor-pointer" @click="showModal('labyrinth')">
                 <img src="/images/portfolio/labyrinthofforestMain.jpg" alt="赤ずきんと迷いの森">
             </div>
-            <div class="work" @click="showModal('reversi')">
+            <div class="work cursor-pointer" @click="showModal('reversi')">
                 <img src="/images/portfolio/DuckReversiMain.jpg" alt="みにくいアヒルのリバーシ">
             </div>
-            <div class="work" @click="showModal('nightmare')">
+            <div class="work cursor-pointer" @click="showModal('nightmare')">
                 <img src="/images/portfolio/AliceInNightmareMain.jpg" alt="アリス イン ナイトメア">
             </div>
-            <div class="work" @click="showModal('monster')">
+            <div class="work cursor-pointer" @click="showModal('monster')">
                 <img src="/images/portfolio/MonsterPuzzleMain.jpg" alt="ぺこぺこモンスター">
             </div>
-            <div class="work" @click="showModal('phantom')">
+            <div class="work cursor-pointer" @click="showModal('phantom')">
                 <img src="/images/portfolio/PhantomCatMain.jpg" alt="怪盗にゃんこ">
             </div>
         </div>
 
         <transition name="fade" class="h-full w-full flex items-center justify-center">
-            <div v-show="show_modal" class="fixed inset-0 z-30" style="display: none;">
+            <div v-show="show_modal" class="fixed inset-0 z-30" style="display: none;margin: 5%;">
 
                 <div v-show="show_modal" @click="showModal()" class="bg-filter dark:bg-gray-700 opacity-25 fixed inset-0 w-full h-full z-20">
                 </div>
@@ -517,9 +438,9 @@
                                 </div>
                                 <div class="p-6 space-y-6">
                                     <div class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-5">
+                                        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-5">
                                             <div v-for="screenshot in modal_screenshots" class="m-auto">
-                                                <img :src="screenshot" :alt="modal_title" class="" style="max-width: 200px;max-height: 200px;">
+                                                <img :src="screenshot" :alt="modal_title" class="" style="width: 100%;min-width: 80px;max-width: 400px;max-height: 300px;">
                                             </div>
                                         </div>
                                     </div>
@@ -538,7 +459,7 @@
     <div style="height: 30px; width: 100%; background: url(/images/portfolio/bg_prof.jpg) repeat right top;"></div>
 
     <section id="skill" class="section">
-        <div class="sectionTitle show mx-auto" style="width: 32.25%;">
+        <div class="sectionTitle show mx-auto">
             <h1 style="background: url(/images/portfolio/bg_title_skill.png) no-repeat center center; background-size: 100% auto;">
                 <img src="/images/portfolio/title_skill.png" alt="スキル セット">
             </h1>
@@ -548,30 +469,30 @@
 
         <div class="skillDetail p-10 grid gap-5 grid-cols-1 sm:grid-cols-2 sm:gap-10 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-10 xl:grid-cols-3 xl:gap-10 2xl:grid-cols-4 2xl:gap-10">
             <div class="skill" style="margin:auto;width:80%;">
-                <canvas id="frontendChart" style="padding:12px;"></canvas>
+                <canvas id="frontendChart" style="padding:15px;"></canvas>
             </div>
             <div class="skill" style="margin:auto;width:80%;">
-                <canvas id="backendChart" style="padding:12px;"></canvas>
+                <canvas id="backendChart" style="padding:15px;"></canvas>
             </div>
             <div class="skill" style="margin:auto;width:80%;">
-                <canvas id="mobileAppChart" style="padding:12px;"></canvas>
+                <canvas id="mobileAppChart" style="padding:15px;"></canvas>
             </div>
             <div class="skill" style="margin:auto;width:80%;">
-                <canvas id="infraChart" style="padding:12px;"></canvas>
+                <canvas id="infraChart" style="padding:15px;"></canvas>
             </div>
             <div class="skill" style="margin:auto;width:80%;">
-                <canvas id="toolChart" style="padding:12px;"></canvas>
+                <canvas id="toolChart" style="padding:15px;"></canvas>
             </div>
         </div>
         <div class="qualificationDetail p-10">
-            <div class="qualification" style="margin:0px auto;"><img src="/images/portfolio/qualification.jpg" style="margin:auto;"></div>
+            <div class="qualification" style="margin:0px auto;width: 50%;min-width: 240px;max-width: 600px;"><img src="/images/portfolio/qualification.jpg" style="margin:auto;"></div>
         </div>
     </section>
 
     <div style="height: 30px; width: 100%; background: url(/images/portfolio/bg_prof.jpg) repeat right top;"></div>
 
     <section id="contact" class="section">
-        <div class="sectionTitle show mx-auto" style="width: 32.25%;">
+        <div class="sectionTitle show mx-auto">
             <h1 style="background: url(/images/portfolio/bg_title_contact.png) no-repeat center center; background-size: 100% auto;">
                 <img src="/images/portfolio/title_contact.png" alt="お問い合わせ">
             </h1>
@@ -581,9 +502,6 @@
 
         <div class="py-6 sm:py-8 lg:py-12">
             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-{{--                <div class="my-1 md:mb-16">--}}
-{{--                    <h2 class="text-gray-800 text-3xl font-bold text-center mb-4">お問い合わせ</h2>--}}
-{{--                </div>--}}
 
                 <form method="POST" action="{{ route('contact.confirm') }}" class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto mb-4">
                     @csrf
@@ -613,10 +531,10 @@
                     </div>
 
                     <div class="sm:col-span-2 flex justify-center items-center">
-{{--                        <button type="submit" class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">送信確認</button>--}}
-                        <button type="submit" style="width: 20%;"><img class="btn_contact" src="/images/portfolio/btn_contact.png"></button>
+                        <button type="submit" style="width: 20%;min-width: 100px;"><img class="btn_contact" src="/images/portfolio/btn_contact.png"></button>
                     </div>
                 </form>
+
             </div>
         </div>
 
@@ -625,20 +543,6 @@
     <div style="height: 30px; width: 100%; background: url(/images/portfolio/bg_prof.jpg) repeat right top;"></div>
 
 </main>
-
-<main id="app2">
-    <div class="content">
-        <p>モーダル１</p>
-        <Modal :modalItems="modalItems[0]" />
-    </div>
-    <div class="content">
-        <p>モーダル２</p>
-        <Modal :modalItems="modalItems[1]" />
-    </div>
-</main>
-
-<footer>
-</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
 <script src="{{ asset('js/app.js') }}"></script>
@@ -655,7 +559,7 @@
                 modal_items: {
                     'official': {
                         title: 'オフィシャルサイト',
-                        content: '制作したアプリの紹介とポートフォリオのサイトになります。\n\n開発環境：Laravel / HTML / CSS(Sass) / JavaScript / Tailwind / Bootstrap / MariaDB / AWS',
+                        content: '制作したアプリの紹介とポートフォリオのサイトになります。\n\n開発環境：Laravel / HTML / CSS / JavaScript / Vue.js / Tailwind / Bootstrap / MariaDB / AWS',
                         screenshots: [
                         ],
                     },
@@ -672,7 +576,7 @@
                     },
                     'labyrinth': {
                         title: '赤ずきんと迷いの森',
-                        content: '倉庫番という定番パズルを２人でも遊べるようにゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
+                        content: '倉庫番という定番パズルを２人でも遊べるようにしたゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
                         screenshots: [
                             '/images/portfolio/labyrinth/Screen-Shot-01.jpg',
                             '/images/portfolio/labyrinth/Screen-Shot-02.jpg',
@@ -753,84 +657,45 @@
         }
     })
 
-    new Vue({
-        el:'#app2',
-    })
-    Vue.component('App', {
-        // name: "App",
-        // components: {
-        //     Modal,
-        // },
-        data() {
-            return {
-                modalItems: [
-                    {
-                        modalTtl: "モダール１",
-                        modalContent: "モーダル１が立ち上がった",
-                    },
-                    {
-                        modalTtl: "モダール２",
-                        modalContent: "モーダル２が立ち上がった",
-                    },
-                ],
-            };
-        },
-    })
-    Vue.component('Modal', {
-        // name: "Modal",
-        // components: {
-        //     ModalContents,
-        //     ModalBtn,
-        // },
-        props: ["modalItems"],
-        data() {
-            return {
-                modalFlg: false,
-            };
-        },
-    })
-
-    var frontendCtx = document.getElementById('frontendChart')
-    var backendCtx = document.getElementById('backendChart')
-    var mobileAppCtx = document.getElementById('mobileAppChart')
-    var infraCtx = document.getElementById('infraChart')
-    var toolCtx = document.getElementById('toolChart')
-//    var ctx2d = ctx.getContext('2d');
-//    ctx2d.font = 'bold 18px Times Roman';
-//    ctx2d.font = 'bolder smaller serif';
-//    ctx2d.font = 'bold 60pt sans-serif';
-
+    const frontendCtx = document.getElementById('frontendChart')
+    const backendCtx = document.getElementById('backendChart')
+    const mobileAppCtx = document.getElementById('mobileAppChart')
+    const infraCtx = document.getElementById('infraChart')
+    const toolCtx = document.getElementById('toolChart')
     const type = 'radar'
     const frontendLabels = [
         'HTML5',
         'CSS3/Sass',
         'JavaScript',
         'Angular',
-        'React',
-        'Vue.js',
+        ' React',
+        ' Vue.js',
     ];
     const backendLabels = [
         'PHP',
-        'Laravel',
-        'Java',
+        'Laravel ',
+        'Java ',
         'MySQL',
-        'PostgreSQL',
-        'Graph QL',
+        ' PostgreSQL',
+        'Graph QL ',
     ];
     const mobileAppLabels = [
+        'Android/Java ',
         'iOS/Swift',
-        'Android/Java',
+        'iOS/Objective-C',
         'Unity/C#',
     ];
     const infraLabels = [
         'Linux',
-        'AWS',
-        'Docker',
+        'AWS ',
+        ' Docker',
     ];
     const toolLabels = [
-        'Git',
-        'Illustrator',
+        'GitHub',
+        'Illustrator ',
         'Photoshop',
+        'Figma',
+        'Slack',
     ];
     const frontendData = {
         labels: frontendLabels,
@@ -839,7 +704,6 @@
             data: [4, 4, 4, 3, 1, 2],
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
             borderColor: 'rgb(255, 99, 132)',
-//            borderWidth: 1,
         }]
     };
     const backendData = {
@@ -849,7 +713,6 @@
             data: [4, 3, 2, 3, 3, 2],
             backgroundColor: 'rgba(54, 162, 235, 0.5)',
             borderColor: 'rgb(54, 162, 235)',
-//            borderWidth: 4,
             pointBorderWidth: 4,
             pointHoverBorderWidth: 4,
         }]
@@ -858,7 +721,7 @@
         labels: mobileAppLabels,
         datasets: [{
             label: 'アプリ',
-            data: [4, 3, 3],
+            data: [3, 4, 2, 3],
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
             borderColor: 'rgb(255, 99, 132)',
         }]
@@ -876,7 +739,7 @@
         labels: toolLabels,
         datasets: [{
             label: 'ツール',
-            data: [3, 3, 2],
+            data: [3, 4, 2, 2, 2],
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
             borderColor: 'rgb(255, 99, 132)',
         }]
@@ -934,7 +797,6 @@
         data: toolData,
         options: chartOptions
     });
-
 </script>
 
 </body>

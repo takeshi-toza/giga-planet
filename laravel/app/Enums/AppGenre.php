@@ -7,8 +7,6 @@ use BenSampo\Enum\Enum;
 final class AppGenre extends Enum
 {
     // アクション
-    const NONE = 1;
-    // アクション
     const ACTION = 1;
     // ロールプレイング
     const RPG = 2;

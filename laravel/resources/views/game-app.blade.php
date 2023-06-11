@@ -62,7 +62,7 @@ div h2:after {
 }
 -->
 </style>
-    <main>
+    <main class="mx-auto mt-16 md:mt-0">
         <div class="mb-4">
             <img src="{{ asset($app->main_image) }}" class="w-full" alt="">
         </div>
@@ -93,22 +93,19 @@ div h2:after {
 
             @if(!empty($app->status) && $app->status === 1)
                 @if(!empty($app->ios_store_url) || !empty($app->android_store_url))
-                    <div class="flex flex-row justify-center items-center mb-3">
+                    <div class="flex flex-row justify-center items-center mb-6">
                         @isset ($app->ios_store_url)
-                            <a href="{{ $app->ios_store_url }}"><img src="/images/btnAppStore.png" style="margin:14px;"></a>
+                            <a href="{{ $app->ios_store_url }}"><img src="/images/btnAppStore.png"></a>
                         @endisset
                         @isset ($app->android_store_url)
-                            <a href="{{ $app->android_store_url }}"><img src="/images/google-play-badge.png" style="height: 85px;"></a>
+                            <a href="{{ $app->android_store_url }}"><img src="/images/google-play-badge.png" style="width: 100%;max-width: 220px;"></a>
                         @endisset
                     </div>
                 @endif
-            @elseif(!empty($app->status) && $app->status === 2)
+            @elseif(empty($app->status))
                 <div class="wp-block-sgb-message">
                     <div class="memo sng-shadow-0" style="border-radius: 5px; background-color: rgb(255, 235, 235); color: rgb(248, 128, 128); --darkreader-inline-bgcolor:#3f0000; --darkreader-inline-color:#f77676;" data-darkreader-inline-bgcolor="" data-darkreader-inline-color="">
                         <div class="memo_ttl dfont">
-                            <span class="sng-box-msg__icon" style="background: rgb(248, 128, 128); --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#7d0707;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="">
-                                <i style="color: #FFF;line-height: 30px;" class="bi bi-robot"></i>
-                            </span>
                             <div class="sng-box-msg__title">配信停止中</div>
                         </div>
                         <div class="sng-box-msg__contents">

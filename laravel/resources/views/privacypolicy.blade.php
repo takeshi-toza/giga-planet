@@ -103,10 +103,9 @@ body .sgb-box-simple .sgb-box-simple__body>* {
 .point-list li+li {
     margin-top: 0.5em;
 }
-
 -->
 </style>
-    <main>
+    <main class="mx-auto mt-20 md:mt-0">
 
         <div style="margin: 0 30px;">
 
