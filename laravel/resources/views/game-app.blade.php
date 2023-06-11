@@ -127,7 +127,7 @@ div h2:after {
                                             <a href="#" class="swiper-slide">
                                                 <article class="slide">
                                                     <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #f3f6fc;border-radius: 0.3em;">
-                                                        <img src="{{ asset($screenshot['screenshot']) }}" style="border-radius: 0.3em;height: 0.1%;">
+                                                        <img src="{{ asset($screenshot['screenshot']) }}" style="border-radius: 0.3em;">
                                                     </div>
                                                 </article>
                                             </a>

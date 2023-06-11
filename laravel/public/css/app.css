@@ -52,7 +52,6 @@ figure {
   overflow: hidden;
 }
 figure img {
-  height: 100%;
   transition: 0.25s;
 }
 figure figcaption {
