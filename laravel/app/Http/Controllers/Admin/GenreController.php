@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Genre;
 use Illuminate\Pagination\Paginator;
-
+use App\Consts\AdminConst;
 
 class GenreController extends Controller
 {
@@ -21,7 +21,7 @@ class GenreController extends Controller
         Paginator::useBootstrap();
 
         // ジャンル一覧
-        $genres = Genre::paginate(5);
+        $genres = Genre::paginate(AdminConst::LIST_COUNT);
 
         return view('admin/admin-genre-index', compact('genres'));
     }

@@ -12,6 +12,7 @@ use Exception;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use App\Consts\AdminConst;
 
 class GameAppController extends Controller
 {
@@ -26,9 +27,7 @@ class GameAppController extends Controller
         Paginator::useBootstrap();
 
         // アプリ一覧
-//        $apps = GameApp::all();
-        // ページネーション
-        $apps = GameApp::paginate(5);
+        $apps = GameApp::paginate(AdminConst::LIST_COUNT);
 
         return view('admin/admin-app-index', compact('apps'));
     }

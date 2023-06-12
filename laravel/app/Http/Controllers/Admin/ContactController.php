@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
+use App\Consts\AdminConst;
 
 class ContactController extends Controller
 {
@@ -20,9 +21,7 @@ class ContactController extends Controller
         Paginator::useBootstrap();
 
         // お問い合わせ一覧
-//        $contacts = Contact::all();
-        // ページネーション
-        $contacts = Contact::paginate(5);
+        $contacts = Contact::paginate(AdminConst::LIST_COUNT);
 
         return view('admin/admin-contact-index', compact('contacts'));
     }
