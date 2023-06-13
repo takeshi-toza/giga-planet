@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
@@ -21,7 +22,7 @@
 
             <div class="form-floating">
                 <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
-                <label for="email">Emailアドレス</label>
+                <label for="email">メールアドレス</label>
             </div>
             <div class="form-floating">
                 <input type="password" name="password" id="password" class="form-control" placeholder="パスワード">
