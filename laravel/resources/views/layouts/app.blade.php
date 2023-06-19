@@ -50,59 +50,13 @@
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
-
+        <script src="{{ asset('js/swiper-config.js') }}"></script>
         <script>
             const app = new Vue({
                 el: "#app",
                 data: {
                     isOpen: false,
                 }
-            });
-        </script>
-
-        <script>
-            const mainVisualSwiper = new Swiper('.main-visual .swiper', {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                grabCursor: true,
-                loop: true,
-                loopAdditionalSlides: 1,
-                speed: 1000,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.main-visual .swiper-pagination',
-                    clickable: true,
-                },
-            });
-            const cardSwiper = new Swiper('.icon-list .swiper', {
-                slidesPerView: 1,
-                spaceBetween: 24,
-                grabCursor: true,
-                loop: true,
-                loopAdditionalSlides: 1,
-                speed: 1000,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    0: {
-                        slidesPerView: 2,
-                    },
-                    460: {
-                        slidesPerView: 3,
-                    },
-                    860: {
-                        slidesPerView: 4,
-                    },
-                    1260: {
-                        slidesPerView: 5,
-                        spaceBetween: 32,
-                    }
-                },
             });
         </script>
     </body>

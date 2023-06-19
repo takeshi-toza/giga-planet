@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/css/tailwind.css": "/css/tailwind.css",
-    "/css/bootstrap.css": "/css/bootstrap.css"
+    "/css/portfolio.css": "/css/portfolio.css",
+    "/css/admin.css": "/css/admin.css",
+    "/css/login.css": "/css/login.css",
+    "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/tailwind.css": "/css/tailwind.css"
 }

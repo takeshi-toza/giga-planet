@@ -139,3 +139,98 @@ figure {
         }
     }
 }
+
+div h2:after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-bottom: solid 3px #D95D59;
+    bottom: -3px;
+    width: 33%;
+}
+.sng-box-msg__contents {
+    color: #545454;
+    p {
+        font-weight: normal;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+.sng-box-msg__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(248, 128, 128);
+    --darkreader-inline-bgcolor: #3f0000;
+    --darkreader-inline-color: #f77676;
+}
+.keiko_red {
+    background: linear-gradient(transparent 50%, rgba(255, 88, 88, 0.24) 50%);
+}
+.youtube {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+.memo {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background: #fff9e5;
+}
+.memo_ttl {
+    margin-bottom: 5px;
+    color: #ffb36b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.sgb-box-simple__title {
+    padding: 0.6em 1em;
+    background: #333;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.5;
+    word-break: break-all;
+}
+.sgb-box-simple__body {
+    margin-top: -2px !important;
+    padding: 0.7em 1.5em;
+    border: solid 2px #333;
+    border-radius: 0 0 6px 6px;
+    font-size: 1em;
+}
+.sgb-box-simple .sgb-box-simple__body>* {
+    margin: 0.5em 0;
+}
+.point-list {
+    counter-reset: pointNum;
+    padding: 0;
+    li {
+        padding-left: 30px;
+        position: relative;
+        text-indent: 0;
+    }
+    li::before {
+        background: #c9a05c;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        margin-right: 0.8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        line-height: 23px;
+        counter-increment: pointNum 1;
+        content: counter(pointNum);
+        text-align: center;
+        vertical-align: middle;
+    }
+    li+li {
+        margin-top: 0.5em;
+    }
+}

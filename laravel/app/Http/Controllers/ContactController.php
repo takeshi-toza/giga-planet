@@ -55,9 +55,7 @@ class ContactController extends Controller
                 'body' => $request->body,
             ]);
 
-            // 入力されたメールアドレスにメールを送信
-//            \Mail::to($inputs['email'])->send(new ContactMail($inputs));
-            // 自分にメールを送信
+            // サイト用メールアドレスに送信
             Mail::to('info@giga-planet.com')->send(new ContactMail($inputs));
 
             // 再送信を防ぐためにトークンを再発行

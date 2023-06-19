@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-
     <main class="mx-auto mt-16 md:mt-0">
 
         <div class="main-visual mb-8">
             <div class="l-inner">
-
                 <div class="swiper-area">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -23,13 +21,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div class="icon-list l-section">
             <div class="l-inner">
-
                 <div class="swiper-area">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -46,7 +42,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -60,15 +55,15 @@
                         <h3 class="font-bold text-lg">{{ $app->title }}</h3>
                         <div>
                             @isset ($app->ios_store_url)
-                                <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-gray-700 mb-2" style="color:#ffffff;background-color:#3498db;">iOS</span>
+                                <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-white mb-2" style="background-color:#3498db;">iOS</span>
                             @endisset
                             @isset ($app->android_store_url)
-                                <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-gray-700 mb-2" style="color:#ffffff;background-color:#2ecc71;">Android</span>
+                                <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-white mb-2" style="background-color:#2ecc71;">Android</span>
                             @endisset
-                            <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-gray-700 mb-2" style="color:#ffffff;background-color:#{{ $app->genre->color_code }};">{{ $app->genre->genre_name }}</span>
+                            <span class="inline-block rounded-full px-2.5 py-1 text-sm font-semibold text-white mb-2" style="background-color:#{{ $app->genre->color_code }};">{{ $app->genre->genre_name }}</span>
                         </div>
                         <p>{{ $app->short_introduction }}</p>
-                        <div style="margin: 1.5rem 0 1rem 0; text-align: center;">
+                        <div class="text-center mx-0 mt-6 mb-4">
                             <a href="{{ route('app.index', $app->app_id) }}" class="relative px-6 py-3 font-bold text-white rounded-lg group">
                                 <span class="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-1 -translate-y-1 bg-purple-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                                 <span class="absolute inset-0 w-full h-full transition duration-300 transform translate-x-1 translate-y-1 bg-pink-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>

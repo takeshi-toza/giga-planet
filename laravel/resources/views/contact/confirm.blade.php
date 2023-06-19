@@ -8,7 +8,7 @@
                     <h2 class="text-gray-800 text-3xl font-bold text-center mb-4">お問い合わせ内容確認</h2>
                 </div>
 
-                <form method="POST" action="{{ route('contact.send') }}" class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto">
+                <form method="post" action="{{ route('contact.send') }}" class="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto">
                     @csrf
 
                     <div class="sm:col-span-2">

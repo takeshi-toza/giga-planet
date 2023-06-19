@@ -10,7 +10,7 @@
 </head>
 <body class="text-center">
     <main class="form-signin w-100 m-auto">
-        <form method="POST" action="{{ route("admin.admin-login") }}">
+        <form method="post" action="{{ route("admin.admin-login") }}">
             @csrf
             <h1 class="h3 mb-3 fw-normal">ログイン画面</h1>
 
@@ -21,7 +21,7 @@
             @endif
 
             <div class="form-floating">
-                <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                <input type="email" name="email" id="email" class="form-control" placeholder="メールアドレス">
                 <label for="email">メールアドレス</label>
             </div>
             <div class="form-floating">
