@@ -9,13 +9,14 @@ new Vue({
             modal_items: {
                 'official': {
                     title: 'オフィシャルサイト',
-                    content: '制作したアプリの紹介とポートフォリオのサイトになります。\n\n開発環境：Laravel / HTML / CSS / JavaScript / Vue.js / Tailwind / Bootstrap / MariaDB / AWS',
+                    content: '個人制作したゲームアプリ紹介とポートフォリオのサイトになります。\n\n開発環境：Laravel / HTML / CSS / JavaScript / Vue.js / Tailwind / Bootstrap / MariaDB / AWS',
                     screenshots: [
+                        '/images/portfolio/giga-planet-top.png',
                     ],
                 },
                 'numbers': {
                     title: 'にゃんばーバトル',
-                    content: '表示された番号を順番にタップしてベストタイムを目指すゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
+                    content: '表示された番号を順番にタップするカジュアルゲームを開発しました。\n１画面共有で二人でも遊べるようにしました。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/numbers/Screen-Shot-01.jpg',
                         '/images/portfolio/numbers/Screen-Shot-02.jpg',
@@ -26,7 +27,7 @@ new Vue({
                 },
                 'labyrinth': {
                     title: '赤ずきんと迷いの森',
-                    content: '倉庫番という定番パズルを２人でも遊べるようにしたゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
+                    content: '倉庫番という定番パズルを２人でも遊べるようにしたゲームを開発しました。\nステージをいくつも用意して少しでも長く遊べるようにしました。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/labyrinth/Screen-Shot-01.jpg',
                         '/images/portfolio/labyrinth/Screen-Shot-02.jpg',
@@ -37,7 +38,7 @@ new Vue({
                 },
                 'reversi': {
                     title: 'みにくいアヒルのリバーシ',
-                    content: 'オセロに少し癒される要素を取り入れたゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
+                    content: 'オセロに少し癒される要素を取り入れたテーブルゲームを開発しました。\n今回、CPUと対応出来る機能に挑戦しました。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/reversi/Screen-Shot-01.jpg',
                         '/images/portfolio/reversi/Screen-Shot-02.jpg',
@@ -47,7 +48,7 @@ new Vue({
                 },
                 'nightmare': {
                     title: 'アリス イン ナイトメア',
-                    content: 'ちょっとホラーな世界が舞台のアリスのアクションゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
+                    content: '初めてアクションゲームの開発に挑戦しました。\nちょっとホラーな世界が舞台のアクションゲームです。\n\n開発環境：Xcode / Swift / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/nightmare/AliceInNightmareScreenShot01.jpg',
                         '/images/portfolio/nightmare/AliceInNightmareScreenShot02.jpg',
@@ -65,7 +66,7 @@ new Vue({
                 },
                 'monster': {
                     title: 'ぺこぺこモンスター',
-                    content: 'Unityを使ってクロスプラットフォーム（iOSとAndroid）に対応したパズルゲームです。\n\n開発環境：Unity / C# / Illustrator / Photoshop',
+                    content: '初めてUnityを使って、クロスプラットフォーム（iOSとAndroid）に対応したパズルゲームを開発しました。\n\n開発環境：Unity / C# / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/monster/ScreenShot01Ja.jpg',
                         '/images/portfolio/monster/ScreenShot02.jpg',
@@ -77,7 +78,7 @@ new Vue({
                 },
                 'phantom': {
                     title: '怪盗にゃんこ',
-                    content: 'Unityを使って前回よりも開発の難易度や規模を上げたアクションパズルゲームです。\n\n開発環境：Unity / C# / Illustrator / Photoshop',
+                    content: 'Unityを使って、前回よりも開発の規模や難易度を上げたアクションパズルゲームを開発しました。\n\n開発環境：Unity / C# / Illustrator / Photoshop',
                     screenshots: [
                         '/images/portfolio/phantom/ScreenShot01Ja.jpg',
                         '/images/portfolio/phantom/ScreenShot02.jpg',
@@ -138,7 +139,8 @@ const mobileAppLabels = [
 const infraLabels = [
     'Linux',
     'AWS ',
-    ' Docker',
+    'Docker',
+    'Nginx',
 ];
 const toolLabels = [
     'GitHub',
@@ -181,7 +183,7 @@ const infraData = {
     labels: infraLabels,
     datasets: [{
         label: 'インフラ',
-        data: [3, 3, 3],
+        data: [3, 3, 3, 2],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         borderColor: 'rgb(255, 99, 132)',
     }]

@@ -51,31 +51,31 @@
             </div>
 
             <div class="worksList p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-5">
-                <div class="work cursor-pointer" @click="showModal('official')">
+                <article class="work cursor-pointer" @click="showModal('official')">
                     <img src="/images/portfolio/GigaPlanetMain.jpg" alt="オフィシャルサイト">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('numbers')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('numbers')">
                     <img src="/images/portfolio/BattleTheNumberMain.jpg" alt="にゃんばーバトル">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('labyrinth')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('labyrinth')">
                     <img src="/images/portfolio/labyrinthofforestMain.jpg" alt="赤ずきんと迷いの森">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('reversi')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('reversi')">
                     <img src="/images/portfolio/DuckReversiMain.jpg" alt="みにくいアヒルのリバーシ">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('nightmare')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('nightmare')">
                     <img src="/images/portfolio/AliceInNightmareMain.jpg" alt="アリス イン ナイトメア">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('monster')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('monster')">
                     <img src="/images/portfolio/MonsterPuzzleMain.jpg" alt="ぺこぺこモンスター">
-                </div>
-                <div class="work cursor-pointer" @click="showModal('phantom')">
+                </article>
+                <article class="work cursor-pointer" @click="showModal('phantom')">
                     <img src="/images/portfolio/PhantomCatMain.jpg" alt="怪盗にゃんこ">
-                </div>
+                </article>
             </div>
 
             <transition name="fade" class="h-full w-full flex items-center justify-center">
-                <div v-show="show_modal" class="fixed inset-0 z-30 hidden" style="margin: 5%;">
+                <div v-show="show_modal" class="fixed inset-0 z-" style="display: none;margin: 5%;">
 
                     <div v-show="show_modal" @click="showModal()" class="bg-filter dark:bg-gray-700 opacity-25 fixed inset-0 w-full h-full z-20">
                     </div>
@@ -131,21 +131,21 @@
             </div>
 
             <div class="skillDetail p-10 grid gap-5 grid-cols-1 sm:grid-cols-2 sm:gap-10 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-10 xl:grid-cols-3 xl:gap-10 2xl:grid-cols-4 2xl:gap-10">
-                <div class="skill m-auto w-4/5">
+                <article class="skill m-auto w-4/5">
                     <canvas id="frontendChart" class="p-4"></canvas>
-                </div>
-                <div class="skill m-auto w-4/5">
+                </article>
+                <article class="skill m-auto w-4/5">
                     <canvas id="backendChart" class="p-4"></canvas>
-                </div>
-                <div class="skill m-auto w-4/5">
+                </article>
+                <article class="skill m-auto w-4/5">
                     <canvas id="mobileAppChart" class="p-4"></canvas>
-                </div>
-                <div class="skill m-auto w-4/5">
+                </article>
+                <article class="skill m-auto w-4/5">
                     <canvas id="infraChart" class="p-4"></canvas>
-                </div>
-                <div class="skill m-auto w-4/5">
+                </article>
+                <article class="skill m-auto w-4/5">
                     <canvas id="toolChart" class="p-4"></canvas>
-                </div>
+                </article>
             </div>
             <div class="qualificationDetail p-10">
                 <div class="qualification" style="margin:0 auto;width: 50%;min-width: 240px;max-width: 600px;">
@@ -165,6 +165,8 @@
                 <div class="shuriken"><img src="/images/portfolio/img_sectionTitle_shuriken.png" alt="手裏剣"></div>
             </div>
 
+            <p class="text-sm sm:text-base text-center">最後までご覧いただき、ありがとうございました。<br>何かありましたら、お気軽にご連絡をください。</p>
+
             <div class="py-6 sm:py-8 lg:py-12">
                 <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
 
@@ -173,7 +175,7 @@
 
                         <div class="sm:col-span-2">
                             <label for="email" class="inline-block text-gray-800 text-sm sm:text-base mb-2">メールアドレス</label>
-                            <input name="email" value="{{ old('email') }}" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+                            <input name="email" id="email" value="{{ old('email') }}" type="text" autocomplete="email" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
                             @if ($errors->has('email'))
                                 <p class="error-message">{{ $errors->first('email') }}</p>
                             @endif
@@ -181,7 +183,7 @@
 
                         <div class="sm:col-span-2">
                             <label for="title" class="inline-block text-gray-800 text-sm sm:text-base mb-2">タイトル</label>
-                            <input name="title" value="{{ old('title') }}" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+                            <input name="title" id="title" value="{{ old('title') }}" type="text" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
                             @if ($errors->has('title'))
                                 <p class="error-message">{{ $errors->first('title') }}</p>
                             @endif
@@ -189,7 +191,7 @@
 
                         <div class="sm:col-span-2">
                             <label for="message" class="inline-block text-gray-800 text-sm sm:text-base mb-2">お問い合わせ内容</label>
-                            <textarea name="body" class="w-full h-64 bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2">{{ old('body') }}</textarea>
+                            <textarea name="body" id="message" class="w-full h-64 bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2">{{ old('body') }}</textarea>
                             @if ($errors->has('body'))
                                 <p class="error-message">{{ $errors->first('body') }}</p>
                             @endif
@@ -197,7 +199,7 @@
 
                         <div class="sm:col-span-2 flex justify-center items-center">
                             <button type="submit" class="w-1/5" style="min-width: 100px;">
-                                <img class="btn-contact" src="/images/portfolio/btn_contact.png">
+                                <img class="btn-contact" src="/images/portfolio/btn_contact.png" alt="">
                             </button>
                         </div>
                     </form>

@@ -13,7 +13,7 @@
 
                     <div class="sm:col-span-2">
                         <label for="email" class="inline-block text-sm sm:text-base mb-2 text-white">メールアドレス</label>
-                        <input name="email" value="{{ old('email') }}" type="text" class="w-full border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;" />
+                        <input name="email" id="email" value="{{ old('email') }}" type="text" autocomplete="email" class="w-full border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;" />
                         @if ($errors->has('email'))
                             <p class="error-message">{{ $errors->first('email') }}</p>
                         @endif
@@ -21,7 +21,7 @@
 
                     <div class="sm:col-span-2">
                         <label for="title" class="inline-block text-sm sm:text-base mb-2 text-white">タイトル</label>
-                        <input name="title" value="{{ old('title') }}" type="text" class="w-full border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;" />
+                        <input name="title" id="title" value="{{ old('title') }}" type="text" class="w-full border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;" />
                         @if ($errors->has('title'))
                             <p class="error-message">{{ $errors->first('title') }}</p>
                         @endif
@@ -29,7 +29,7 @@
 
                     <div class="sm:col-span-2">
                         <label for="message" class="inline-block text-sm sm:text-base mb-2 text-white">お問い合わせ内容</label>
-                        <textarea name="body" class="w-full h-64 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;">{{ old('body') }}</textarea>
+                        <textarea name="body"id="message" class="w-full h-64 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" style="background-color: #999;">{{ old('body') }}</textarea>
                         @if ($errors->has('body'))
                             <p class="error-message">{{ $errors->first('body') }}</p>
                         @endif
