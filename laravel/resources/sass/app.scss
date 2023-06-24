@@ -148,23 +148,21 @@ div h2:after {
     bottom: -3px;
     width: 33%;
 }
-.sng-box-msg__contents {
-    color: #545454;
-    p {
-        font-weight: normal;
-        font-size: 1rem;
-        margin: 0;
-    }
+.sng-box-msg__contents p {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0;
 }
 .sng-box-msg__title {
     display: inline-block;
     vertical-align: middle;
     color: rgb(248, 128, 128);
-    --darkreader-inline-bgcolor: #3f0000;
-    --darkreader-inline-color: #f77676;
+}
+.keiko_yellow {
+    background: linear-gradient(transparent 50%, #ffb36b77 50%);
 }
 .keiko_red {
-    background: linear-gradient(transparent 50%, rgba(255, 88, 88, 0.24) 50%);
+    background: linear-gradient(transparent 50%, #ff585866 50%);
 }
 .youtube {
     width: 100%;

@@ -40,9 +40,9 @@
                     </div>
                 </form>
 
-                <div class="max-w-screen-md mx-auto wp-block-sgb-block-simple sgb-box-simple sgb-box-simple--title-normal">
-                    <div class="sgb-box-simple__title text-white" style="background-color: rgb(248, 128, 128);">お問い合わせについて</div>
-                    <div class="sgb-box-simple__body" style="border-color: rgb(248, 128, 128); background-color: #fff9e6;">
+                <div class="max-w-screen-md mx-auto text-sm sm:text-base text-white wp-block-sgb-block-simple sgb-box-simple sgb-box-simple--title-normal">
+                    <div class="sgb-box-simple__title" style="background-color: rgb(248, 128, 128);">お問い合わせについて</div>
+                    <div class="sgb-box-simple__body" style="border-color: rgb(248, 128, 128); background-color: #333;">
                         <p>上記のフォームより、お気軽にお問い合わせください。</p>
                         <ol class="point-list">
                             <li>上記の項目は、全て必須の項目になります。</li>

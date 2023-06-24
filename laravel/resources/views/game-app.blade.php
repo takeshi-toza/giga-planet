@@ -16,12 +16,10 @@
 
             <h2 class="text-white" style="font-size: 1.4rem;line-height: 1.4;border-bottom: 3px #0bd solid;padding: 5px 0;margin: 40px 0 15px;font-weight: bold;position: relative;">{{ $app->title }}</h2>
 
-            <div class="p-4 mb-6 rounded" style="background-color:#fff9e6;color:#ffb36b;">
-                <div style="color: #545454;">
-                    <p>
-                        {!! $app->introduction !!}
-                    </p>
-                </div>
+            <div class="p-4 mb-6 text-white rounded" style="background-color:#333;">
+                <p>
+                    {!! $app->introduction !!}
+                </p>
             </div>
 
             @isset ($app->sub_image)
@@ -42,14 +40,12 @@
                     </div>
                 @endif
             @elseif(empty($app->status))
-                <div class="wp-block-sgb-message">
-                    <div class="memo sng-shadow-0 rounded" style="background-color: rgb(255, 235, 235); color: rgb(248, 128, 128);">
-                        <div class="memo_ttl dfont">
-                            <div class="sng-box-msg__title">配信停止中</div>
-                        </div>
-                        <div class="sng-box-msg__contents">
-                            <p>現在、こちらのアプリは<span class="keiko_red">配信を停止しています</span>。</p>
-                        </div>
+                <div class="memo sng-shadow-0 rounded" style="background-color:#333; color: rgb(248, 128, 128);">
+                    <div class="memo_ttl dfont">
+                        <div class="sng-box-msg__title">配信停止中</div>
+                    </div>
+                    <div class="text-white sng-box-msg__contents">
+                        <p>現在、こちらのアプリは<span class="keiko_red">配信を停止しています</span>。</p>
                     </div>
                 </div>
             @endif
@@ -65,7 +61,7 @@
                                         @foreach ($screenshot_index as $screenshot)
                                             <a href="javascript:void(0);" class="swiper-slide">
                                                 <article class="slide">
-                                                    <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #f3f6fc;border-radius: 0.3em;">
+                                                    <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #222;border-radius: 0.3em;">
                                                         <img src="{{ asset($screenshot['screenshot']) }}" alt="" class="rounded">
                                                     </div>
                                                 </article>
@@ -82,7 +78,7 @@
                                     @foreach ($app->screenshot as $screenshot)
                                         <a href="javascript:void(0);" class="swiper-slide">
                                             <article class="slide">
-                                                <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #f3f6fc;border-radius: 0.3em;">
+                                                <div class="slide-media img-cover" style="margin: 0 0 1.5em;padding: 0.5em;background: #222;border-radius: 0.3em;">
                                                     <img src="{{ asset($screenshot->screenshot) }}" alt="" class="rounded max-w-full">
                                                 </div>
                                             </article>
