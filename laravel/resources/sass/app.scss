@@ -4,6 +4,54 @@
 // Variables
 @import 'variables';
 
+.menu {
+    top: -100%;
+    transition: all .3s 0s ease;
+}
+.menu.active {
+    top: 0;
+    transition: all .3s 0s ease;
+}
+.toggle {
+    display: block;
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    top: 16px;
+    right: 16px;
+}
+.toggle span {
+    display: block;
+    position: absolute;
+    width: 28px;
+    border-bottom: solid 3px #fff;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.toggle span:nth-child(1) {
+    top:8px;
+}
+.toggle span:nth-child(2) {
+    top: 16px;
+}
+.toggle span:nth-child(3) {
+    top: 24px;
+}
+.toggle.active span:nth-child(1) {
+    top: 16px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.toggle.active span:nth-child(2),
+.toggle.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .swiper {
     article {
         div {

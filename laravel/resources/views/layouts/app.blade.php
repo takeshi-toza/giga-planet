@@ -27,14 +27,15 @@
                         <h1 class="text-4xl font-semibold lg:mt-5"><a href="{{ route('index') }}"><img src="/images/LogoGigaPlanet.png"></a></h1>
                         <div class="md:hidden">
                             <button @click="isOpen = !isOpen" class="focus:outline-none align-middle">
-                                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                                    <path v-show="!isOpen" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
-                                    <path v-show="isOpen" d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
-                                </svg>
+                                <div :class="isOpen ? 'active' : ''" class="toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </button>
                         </div>
                     </div>
-                    <div :class="isOpen ? 'block' : 'hidden'" class="fixed left-0 w-full mt-16 bg-gray-700 md:block md:static md:mt-0 z-50">
+                    <div :class="isOpen ? 'active' : ''" class="menu block fixed left-0 w-full mt-16 bg-gray-700 md:block md:static md:mt-0 z-40">
                         <ul class="md:flex md:justify-end md:items-center">
                             <li class="border-b md:border-none"><a href="{{ route('index') }}" class="block px-8 py-2 my-4 hover:text-yellow-300">ホーム</a></li>
                             <li class="border-b md:border-none"><a href="{{ route('privacypolicy') }}" class="block px-8 py-2 my-4 hover:text-yellow-300">プライバシーポリシー</a></li>
