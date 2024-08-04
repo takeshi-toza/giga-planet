@@ -1,1 +1,299 @@
-.sectionTitle{margin:10px auto 50px;max-width:516px;min-width:240px;position:relative;width:32.25%}.sectionTitle:before{content:"";display:block;height:0;left:0;margin-left:3.1008%;margin-top:3.4884%;padding-top:21.3179%;position:absolute;top:0;width:96.8993%}.sectionTitle.show:before{margin-left:3.1008%;margin-top:3.4884%;opacity:1;transform:scale(1)}.sectionTitle h1{position:relative}.sectionTitle .shuriken{bottom:0;height:0;margin-bottom:5.4264%;margin-right:1.938%;padding-top:5.814%;position:absolute;right:0;width:5.814%}.sectionTitle .shuriken:after{background:url(/images/portfolio/bg_sectionTitle_shuriken.png) no-repeat 100% 100%;background-size:100% 100%;bottom:0;content:"";display:block;height:100%;position:absolute;right:0;width:100%}.sectionTitle .shuriken2{height:0;left:0;margin-bottom:5.4264%;margin-left:3.5%;margin-top:1.8%;padding-bottom:5.814%;position:absolute;top:0;width:5.814%}.sectionTitle .shuriken2:after{background:url(/images/portfolio/bg_sectionTitle_shuriken.png) no-repeat 100% 100%;background-size:100% 100%;bottom:0;content:"";display:block;height:100%;position:absolute;right:0;width:100%}.sectionTitle .shuriken img{bottom:0;height:100%;left:0;position:absolute;width:100%}.sectionTitle.show .shuriken img{margin-bottom:0;margin-left:0;opacity:1;transform:scale(1) rotate(0deg)}#profile{background-color:#fdeddb;padding-bottom:5%;padding-top:5%}#profile .sectionTitle:before{background-color:#4d2a0f}#profile .characterDetailWrap{margin:auto auto 2.5rem;max-width:1104px;min-width:280px;position:relative;width:69%}#profile .characterDetailWrap:before{background:url(/images/portfolio/bg_prof_makimono_top_pc.png) no-repeat bottom;background-size:100% auto;content:"";display:block;height:0;left:0;margin-left:0;margin-top:-2.4457%;padding-top:59.058%;position:absolute;top:0;transition:margin-left .5s ease;width:7.6993%;z-index:2}#profile .characterDetailWrap:after{background:url(/images/portfolio/bg_prof_makimono_bottom_pc.png) no-repeat bottom;background-size:100% auto;content:"";display:block;height:0;margin-right:-6.3406%;margin-top:-.4529%;padding-top:59.2392%;position:absolute;right:0;top:0;width:9.9638%;z-index:3}#profile .characterDetailWrap .characterDetail{background:url(/images/portfolio/bg_prof.jpg) repeat 100% 0;background-size:200px auto;height:0;margin:0 1.2682% 0 auto;padding-bottom:0;padding-top:55.7972%;position:relative;width:95.1087%;z-index:1}#profile .characterDetailWrap .characterDetail:before{background:rgba(0,0,0,.35);content:"";display:block;height:0;left:0;margin-left:4.1905%;margin-top:3.2381%;padding-top:52.9524%;position:absolute;top:0;width:93.3334%;z-index:1}#profile .characterDetailWrap .characterDetail:after{background-color:#fdeddb;background-image:none;display:block;height:100%;margin-bottom:0;margin-left:0;padding-top:0;transition:width .5s ease;width:93.8096%}#profile .characterDetailWrap .characterDetail .profDetail{background:none;background-color:#fff;display:block;height:0;left:0;margin-left:3.8096%;margin-top:2.8572%;padding:52.9524% 0 0;position:absolute;top:0;width:93.3334%;z-index:4}#profile .characterDetailWrap .characterDetail .profDetail .name{background:url(/images/portfolio/prof_name.jpg) no-repeat top;background-size:100% auto;height:0;left:auto;margin-right:11.5511%;margin-top:5.1837%;overflow:hidden;padding-top:10.1429%;position:absolute;right:0;top:0;width:32.6123%}#profile .characterDetailWrap .characterDetail .profDetail .image{left:0;margin-left:3.5%;margin-top:3%;position:absolute;top:0;width:51.0205%}#profile .characterDetailWrap .characterDetail .profDetail .detail{background:url(/images/portfolio/prof_text.jpg) no-repeat top;background-size:100% auto;height:0;margin-right:8%;margin-top:15%;overflow:hidden;padding-bottom:0;padding-top:38%;position:absolute;right:0;top:0;width:36%}#works{background-color:#7e8a00;padding-bottom:5%;padding-top:5%}#works .sectionTitle:before{background-color:#4d5400}#works .work{background:url(/images/portfolio/bg_work.png) no-repeat 50%;background-size:100% 100%;margin:auto;max-width:600px;overflow:hidden;position:relative;width:87.67%}#works .work img{padding:6%}#skill{background-color:#333f69;padding-bottom:5%;padding-top:5%}#skill .sectionTitle:before{background-color:#222a45}#skill .skill{background:url(/images/portfolio/bg_chart.jpg) no-repeat 50%;background-size:100% 100%}#contact{background-color:#ffbe00;padding-bottom:5%;padding-top:5%}#contact .sectionTitle:before{background-color:#b28900}#contact .btn-contact:hover{opacity:.7;transition:.3s}.partition{background:url(/images/portfolio/bg_prof.jpg) repeat 100% 0;height:30px;width:100%}.fade-up-down-enter-active,.fade-up-down-leave-active{transition:all .5s ease}.fade-up-down-enter,.fade-up-down-leave-to{opacity:0}.fade-enter-active,.fade-leave-active{transition:opacity .5s}.fade-enter,.fade-leave-to{opacity:0}
+.sectionTitle {
+  width: 32.25%;
+  min-width: 240px;
+  max-width: 516px;
+  position: relative;
+  margin: 10px auto 50px;
+}
+.sectionTitle::before {
+  content: "";
+  width: 96.8993%;
+  height: 0;
+  padding-top: 21.3179%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3.4884%;
+  margin-left: 3.1008%;
+}
+.sectionTitle.show::before {
+  margin-top: 3.4884%;
+  margin-left: 3.1008%;
+  transform: scale(1);
+  opacity: 1;
+}
+.sectionTitle h1 {
+  position: relative;
+}
+.sectionTitle .shuriken {
+  width: 5.814%;
+  height: 0;
+  padding-top: 5.814%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5.4264%;
+  margin-right: 1.938%;
+}
+.sectionTitle .shuriken::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(/images/portfolio/bg_sectionTitle_shuriken.png) no-repeat right bottom;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.sectionTitle .shuriken2 {
+  width: 5.814%;
+  height: 0;
+  padding-bottom: 5.814%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1.8%;
+  margin-bottom: 5.4264%;
+  margin-left: 3.5%;
+}
+.sectionTitle .shuriken2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(/images/portfolio/bg_sectionTitle_shuriken.png) no-repeat right bottom;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.sectionTitle .shuriken img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.sectionTitle.show .shuriken img {
+  margin-bottom: 0;
+  margin-left: 0;
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+#profile {
+  background-color: #fdeddb;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#profile .sectionTitle::before {
+  background-color: #4d2a0f;
+}
+#profile .characterDetailWrap {
+  position: relative;
+  margin: auto auto 2.5rem auto;
+  width: 69%;
+  min-width: 280px;
+  max-width: 1104px;
+}
+#profile .characterDetailWrap::before {
+  content: "";
+  width: 7.6993%;
+  height: 0;
+  padding-top: 59.058%;
+  display: block;
+  background: url(/images/portfolio/bg_prof_makimono_top_pc.png) no-repeat center bottom;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -2.4457%;
+  margin-left: 0;
+  z-index: 2;
+  transition: margin-left 0.5s ease;
+}
+#profile .characterDetailWrap::after {
+  content: "";
+  width: 9.9638%;
+  height: 0;
+  padding-top: 59.2392%;
+  display: block;
+  background: url(/images/portfolio/bg_prof_makimono_bottom_pc.png) no-repeat center bottom;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -0.4529%;
+  margin-right: -6.3406%;
+  z-index: 3;
+}
+#profile .characterDetailWrap .characterDetail {
+  width: 95.1087%;
+  height: 0;
+  position: relative;
+  padding-top: 55.7972%;
+  background: url(/images/portfolio/bg_prof.jpg) repeat right top;
+  background-size: 200px auto;
+  padding-bottom: 0;
+  margin: 0 1.2682% 0 auto;
+  z-index: 1;
+}
+#profile .characterDetailWrap .characterDetail::before {
+  content: "";
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93.3334%;
+  padding-top: 52.9524%;
+  background: rgba(0, 0, 0, 0.35);
+  margin-top: 3.2381%;
+  margin-left: 4.1905%;
+  z-index: 1;
+}
+#profile .characterDetailWrap .characterDetail::after {
+  width: 93.8096%;
+  height: 100%;
+  padding-top: 0;
+  display: block;
+  background-color: #fdeddb;
+  background-image: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  transition: width 0.5s ease;
+}
+#profile .characterDetailWrap .characterDetail .profDetail {
+  width: 93.3334%;
+  height: 0;
+  background: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 52.9524% 0 0;
+  margin-top: 2.8572%;
+  margin-left: 3.8096%;
+  z-index: 4;
+  display: block;
+}
+#profile .characterDetailWrap .characterDetail .profDetail .name {
+  background: url(/images/portfolio/prof_name.jpg) no-repeat center top;
+  background-size: 100% auto;
+  left: auto;
+  margin-right: 11.5511%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 32.6123%;
+  overflow: hidden;
+  padding-top: 10.1429%;
+  margin-top: 5.1837%;
+}
+#profile .characterDetailWrap .characterDetail .profDetail .image {
+  left: 0;
+  margin-left: 3.5%;
+  width: 51.0205%;
+  position: absolute;
+  top: 0;
+  margin-top: 3%;
+}
+#profile .characterDetailWrap .characterDetail .profDetail .detail {
+  background: url(/images/portfolio/prof_text.jpg) no-repeat center top;
+  background-size: 100% auto;
+  right: 0;
+  margin-right: 8%;
+  height: 0;
+  padding-top: 38%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  padding-bottom: 0;
+  margin-top: 15%;
+  width: 36%;
+}
+
+#works {
+  background-color: #7e8a00;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#works .sectionTitle::before {
+  background-color: #4d5400;
+}
+#works .work {
+  position: relative;
+  overflow: hidden;
+  width: 87.67%;
+  max-width: 600px;
+  margin: auto auto;
+  background: url(/images/portfolio/bg_work.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+#works .work img {
+  padding: 6%;
+}
+
+#skill {
+  background-color: #333f69;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#skill .sectionTitle::before {
+  background-color: #222a45;
+}
+#skill .skill {
+  background: url(/images/portfolio/bg_chart.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+#contact {
+  background-color: #ffbe00;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#contact .sectionTitle::before {
+  background-color: #b28900;
+}
+#contact .btn-contact:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.partition {
+  height: 30px;
+  width: 100%;
+  background: url(/images/portfolio/bg_prof.jpg) repeat right top;
+}
+
+.fade-up-down-enter-active {
+  transition: all 0.5s ease;
+}
+
+.fade-up-down-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-up-down-enter {
+  opacity: 0;
+}
+
+.fade-up-down-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

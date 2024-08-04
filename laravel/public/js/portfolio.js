@@ -126,9 +126,9 @@ const backendLabels = [
     'PHP',
     'Laravel ',
     'Java ',
+    'Python',
     'MySQL',
     ' PostgreSQL',
-    'Graph QL ',
 ];
 const mobileAppLabels = [
     'Android/Java ',
@@ -147,14 +147,13 @@ const toolLabels = [
     'Illustrator ',
     'Photoshop',
     'Figma',
-    'Slack',
 ];
 
 const frontendData = {
     labels: frontendLabels,
     datasets: [{
         label: 'フロントエンド',
-        data: [4, 4, 4, 3, 2, 2],
+        data: [4, 4, 4, 3, 3, 2],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         borderColor: 'rgb(255, 99, 132)',
     }]
@@ -163,7 +162,7 @@ const backendData = {
     labels: backendLabels,
     datasets: [{
         label: 'バックエンド',
-        data: [4, 3, 2, 3, 3, 2],
+        data: [4, 4, 2, 2, 4, 3],
         backgroundColor: 'rgba(54, 162, 235, 0.5)',
         borderColor: 'rgb(54, 162, 235)',
         pointBorderWidth: 4,
@@ -183,7 +182,7 @@ const infraData = {
     labels: infraLabels,
     datasets: [{
         label: 'インフラ',
-        data: [3, 3, 3, 2],
+        data: [3, 3, 3, 3],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         borderColor: 'rgb(255, 99, 132)',
     }]
@@ -192,7 +191,7 @@ const toolData = {
     labels: toolLabels,
     datasets: [{
         label: 'ツール',
-        data: [3, 4, 2, 2, 2],
+        data: [3, 4, 2, 2],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         borderColor: 'rgb(255, 99, 132)',
     }]
